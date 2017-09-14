@@ -166,53 +166,30 @@ Markdown 支持有序列表和无序列表。
 
 很重要的一点是，你在列表标记上使用的数字并不会影响输出的 HTML 结果，上面的列表所产生的 HTML 标记为：  
 >\<ol>  
-\<li>Bird</li>  
-\<li>McHale</li>  
-\<li>Parish</li>  
+\<li>Bird\</li>  
+\<li>McHale\</li>  
+\<li>Parish\</li>  
 \</ol>
 
-如果你的列表标记写成：
+如果你的列表标记写成：  
+>1\.  Bird  
+1\.  McHale  
+1\.  Parish
 
-1.  Bird
-1.  McHale
-1.  Parish
-或甚至是：
+或甚至是：  
+>3\. Bird
+1\. McHale
+8\. Parish
 
-3. Bird
-1. McHale
-8. Parish
 你都会得到完全相同的 HTML 输出。重点在于，你可以让 Markdown 文件的列表数字和输出的结果相同，或是你懒一点，你可以完全不用在意数字的正确性。
 
 如果你使用懒惰的写法，建议第一个项目最好还是从 1. 开始，因为 Markdown 未来可能会支持有序列表的 start 属性。
 
-如果列表项目间用空行分开，在输出 HTML 时 Markdown 就会将项目内容用 <p> 标签包起来，举例来说：
+当然，项目列表很可能会不小心产生，像是下面这样的写法：  
+>1986\. What a great season.
 
-*   Bird
-*   Magic
-会被转换为：
-
-<ul>
-<li>Bird</li>
-<li>Magic</li>
-</ul>
-但是这个：
-
-*   Bird
-
-*   Magic
-会被转换为：
-
-<ul>
-<li><p>Bird</p></li>
-<li><p>Magic</p></li>
-</ul>
-
-当然，项目列表很可能会不小心产生，像是下面这样的写法：
-
-1986. What a great season.
-换句话说，也就是在行首出现数字-句点-空白，要避免这样的状况，你可以在句点前面加上反斜杠。
-
-1986\. What a great season.
+换句话说，也就是在行首出现数字-句点-空白，要避免这样的状况，你可以在句点前面加上反斜杠。  
+>1986\\\. What a great season.
 
 ##代码区块
 
