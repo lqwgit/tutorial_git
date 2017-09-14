@@ -267,7 +267,7 @@ Use the `printf()` function.
 > \<http://example.com/>
 
 会转化为：  
->\<a href="http:\/\/example.com/">http://example.com/</a>
+>\<a href="http:\/\/example.com/">http:\/\/example.com/\</a>
 
 显示为：  
 <http://example.com/>
