@@ -267,7 +267,7 @@ Use the `printf()` function.
 > \<http://example.com/>
 
 会转化为：  
->\<a href="http:\/\/example.com/">http:\/\/example.com/\</a>
+>\<a href="http:\/\/example.com\/">http:\/\/example.com\/\</a>
 
 显示为：  
 <http://example.com/>
@@ -286,3 +286,14 @@ Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的�
 >\-   &nbsp;&nbsp;&nbsp;&nbsp;减号  
 >\.   &nbsp;&nbsp;&nbsp;&nbsp;英文句点  
 >\!   &nbsp;&nbsp;&nbsp;&nbsp;惊叹号
+
+## 表格
+例如：  
+>参数 \| 必需 \| 类型 \| 说明
+---\|---\|---\|---
+user_id \| int64 \| Y \| 用户id
+
+显示为：  
+参数 | 必需 | 类型 | 说明
+---|---|---|---
+user_id | int64 | Y | 用户id
