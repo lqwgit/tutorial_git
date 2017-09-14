@@ -15,7 +15,9 @@ Markdown 语法的目标是：成为一种适用于网络的书写语言。Markd
 >这是一段文本，  
 回车不能换行，\<br>  
 要使用\\\<br>
+
 你会得到
+
 >这是一段文本，
 回车不能换行，<br>
 要使用\<br>
@@ -25,10 +27,10 @@ Markdown 语法的目标是：成为一种适用于网络的书写语言。Markd
 例子如下，在 Markdown 文件里加上一段 HTML 表格,要这样写：
 > 这是一个普通段落。  
 > &lt;table>  
-    &lt;tr>  
-    &lt;td>Foo&lt;/td>  
-    &lt;/tr>  
-    &lt;/table>  
+	&lt;tr>  
+	&lt;td>Foo&lt;/td>  
+	&lt;/tr>  
+	&lt;/table>  
 > 这是另一个普通段落。
 
 HTML 的区段（行内）标签如 <span>、<cite>、<del> 可以在 Markdown 的段落、列表或是标题里随意使用。依照个人习惯，甚至可以不用 Markdown 格式，而直接采用 HTML 标签来格式化。举例说明：如果比较喜欢 HTML 的 <a> 或 <img> 标签，可以直接使用这些标签，而不用 Markdown 提供的链接或是图像标签语法。
