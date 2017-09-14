@@ -12,22 +12,16 @@ Markdown 语法的目标是：成为一种适用于网络的书写语言。
 
 不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。
 
-要制约的只有一些 HTML 区块元素――比如 &lt;div>、&lt;table>、&lt;pre>、&lt;p> 等标签。详情见http://wowubuntu.com/markdown/。
+要制约的只有一些 HTML 区块元素――比如 &lt;div>、&lt;table>、&lt;pre>、&lt;p> 等标签。必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进。
 
 例子如下，在 Markdown 文件里加上一段 HTML 表格：
 
-> 这是一个普通段落。
-
-> &lt;table>
-
->     &lt;tr>
-
->     &lt;td>Foo&lt;/td>
-
->     &lt;/tr>
-
-> &lt;/table>
-
+> 这是一个普通段落。  
+> &lt;table>  
+>     &lt;tr>  
+>     &lt;td>Foo&lt;/td>  
+>     &lt;/tr>  
+> &lt;/table>  
 > 这是另一个普通段落。
 
 请注意，在 HTML 区块标签间的 Markdown 格式语法将不会被处理。比如，你在 HTML 区块内使用 Markdown 样式的*强调*会没有效果。
