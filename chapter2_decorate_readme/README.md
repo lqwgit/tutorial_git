@@ -63,32 +63,31 @@ Markdown 不会处理它
 Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。
 
 类 Setext 形式是用底线的形式，利用 = （最高阶标题）和 - （第二阶标题），例如：  
->This is an H1
-\=============
-This is an H2
+>This is an H1  
+\=============  
+This is an H2  
 \-------------
 
 任何数量的 = 和 - 都可以有效果。
 
-类 Atx 形式则是在行首插入 1 到 6 个 # ，对应到标题 1 到 6 阶，例如：
-# 这是 H1
+类 Atx 形式则是在行首插入 1 到 6 个 #并紧跟一个空格 ，对应到标题 1 到 6 阶。如果不打空格，那么就会把#显示出来，没有标题的样式。例如：  
+># 这是 H1
 ## 这是 H2
 ###### 这是 H6
 
-你可以选择性地「闭合」类 atx 样式的标题，这纯粹只是美观用的，若是觉得这样看起来比较舒适，你就可以在行尾加上 #，而行尾的 # 数量也不用和开头一样（行首的井字符数量决定标题的阶数）：
-# 这是 H1 #
-## 这是 H2 ##
-### 这是 H3 ######
+你可以选择性地「闭合」类 atx 样式的标题，这纯粹只是美观用的，若是觉得这样看起来比较舒适，你就可以在行尾加上 #，而行尾的 # 数量也不用和开头一样（行首的井字符数量决定标题的阶数）：  
+># 这是 H1 #  
+## 这是 H2 ##  
+### 这是 H3 ######  
 
-##区块引用 Blockquotes
+## 区块引用 Blockquotes
 
-Markdown 标记区块引用是使用类似 email 中用 > 的引用方式。如果你还熟悉在 email 信件中的引言部分，你就知道怎么在 Markdown 文件中建立一个区块引用，那会看起来像是你自己先断好行，然后在每行的最前面加上 > ：
-
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-> consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-> Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-> 
-> Donec sit amet nisl. Aliqua
+Markdown 标记区块引用是使用类似 email 中用 > 的引用方式。例如：  
+> &gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,  
+&gt;consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.  
+&gt;Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.  
+&gt;  
+&gt;Donec sit amet nisl. Aliqua
 
 Markdown 也允许你偷懒只在整个段落的第一行最前面加上 > ：
 
