@@ -141,7 +141,7 @@ id sem consectetuer libero luctus adipiscing.
 
 注意>后面的空格不会显示，无论多少个。以及连续的两个换行会终止引用，变成段落。如果需要两个换行，请在前面加上>。
 
-# 列表
+## 列表
 Markdown 支持有序列表和无序列表。
 
 无序列表使用星号、加号或是减号作为列表标记：  
@@ -229,6 +229,20 @@ Markdown 支持有序列表和无序列表。
 
 ————————————
 
+# 区段元素
+## 链接
+行内式
+
+例如：  
+> This is \[an example\]\(http://example.com/ "Title"\) inline link.
+
+会变成  
+This is [an example](http://example.com/ "Title") inline link.
+
+使用相对路径是OK的。
+
+参考式  
+不想讲，参考http://wowubuntu.com/markdown/
 
 ##反斜杠
 Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：
