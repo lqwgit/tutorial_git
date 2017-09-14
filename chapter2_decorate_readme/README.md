@@ -267,22 +267,22 @@ Use the `printf()` function.
 > \<http://example.com/>
 
 会转化为：  
->\<a href="http://example.com/">http://example.com/</a>
+>\<a href="http:\/\/example.com/">http://example.com/</a>
 
 显示为：  
 <http://example.com/>
 
 ## 反斜杠
 Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：  
->\\   反斜线  
->\`   反引号  
->\*   星号  
->\_   底线  
->\{\}  花括号  
->\[\]  方括号  
->\(\)  括弧  
->\#   井字号  
->\+   加号  
->\-   减号  
->\.   英文句点  
->\!   惊叹号
+>\\   &nbsp;&nbsp;&nbsp;&nbsp;反斜线  
+>\`   &nbsp;&nbsp;&nbsp;&nbsp;反引号  
+>\*   &nbsp;&nbsp;&nbsp;&nbsp;星号  
+>\_   &nbsp;&nbsp;&nbsp;&nbsp;底线  
+>\{\}  &nbsp;&nbsp;&nbsp;&nbsp;花括号  
+>\[\]  &nbsp;&nbsp;&nbsp;&nbsp;方括号  
+>\(\)  &nbsp;&nbsp;&nbsp;&nbsp;括弧  
+>\#   &nbsp;&nbsp;&nbsp;&nbsp;井字号  
+>\+   &nbsp;&nbsp;&nbsp;&nbsp;加号  
+>\-   &nbsp;&nbsp;&nbsp;&nbsp;减号  
+>\.   &nbsp;&nbsp;&nbsp;&nbsp;英文句点  
+>\!   &nbsp;&nbsp;&nbsp;&nbsp;惊叹号
