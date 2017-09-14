@@ -101,7 +101,7 @@ Markdown 也允许你偷懒只在整个段落的第一行最前面加上 >，例
 > &gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,  
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.  
 Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-  
+>  
 > &gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 id sem consectetuer libero luctus adipiscing.
 
@@ -119,8 +119,17 @@ id sem consectetuer libero luctus adipiscing.
 >  
 > Back to the first level. 
 
-引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：
+引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：  
+> &gt;\## 这是一个标题。  
+&gt;  
+&gt;1\.   这是第一行列表项。  
+&gt;2\.   这是第二行列表项。  
+&gt;  
+&gt;给出一些例子代码：  
+&gt;  
+&gt;      return shell_exec("echo $input | $markdown_script");
 
+会显示为
 > ## 这是一个标题。
 > 
 > 1.   这是第一行列表项。
@@ -130,7 +139,7 @@ id sem consectetuer libero luctus adipiscing.
 > 
 >     return shell_exec("echo $input | $markdown_script");
 
-#列表
+# 列表
 Markdown 支持有序列表和无序列表。
 
 无序列表使用星号、加号或是减号作为列表标记：
