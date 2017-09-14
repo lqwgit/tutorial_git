@@ -89,21 +89,36 @@ Markdown 标记区块引用是使用类似 email 中用 > 的引用方式。例�
 &gt;  
 &gt;Donec sit amet nisl. Aliqua
 
-Markdown 也允许你偷懒只在整个段落的第一行最前面加上 > ：
+会显示为
+>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+>consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+>Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+>
+>Donec sit amet nisl. Aliqua
 
-> This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
-consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Markdown 也允许你偷懒只在整个段落的第一行最前面加上 >，例如 ：
+
+> &gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,  
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.  
 Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
-
-> Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+  
+> &gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
 id sem consectetuer libero luctus adipiscing.
-区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的 > ：
 
-> This is the first level of quoting.
->
-> > This is nested blockquote.
->
-> Back to the first level.
+区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的 > ：  
+> &gt;This is the first level of quoting.  
+&gt;  
+&gt;&gt; This is nested blockquote.  
+&gt;  
+&gt;Back to the first level.
+
+会显示为。 
+>This is the first level of quoting.
+>  
+>>This is nested blockquote.  
+>  
+> Back to the first level. 
+
 引用的区块内也可以使用其他的 Markdown 语法，包括标题、列表、代码区块等：
 
 > ## 这是一个标题。
