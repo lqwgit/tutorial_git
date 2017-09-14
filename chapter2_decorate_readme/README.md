@@ -139,6 +139,8 @@ id sem consectetuer libero luctus adipiscing.
 > 
 >     return shell_exec("echo $input | $markdown_script");
 
+注意>后面的空格不会显示，无论多少个。以及连续的两个换行会终止引用，变成段落。如果需要两个换行，请在前面加上>。
+
 # 列表
 Markdown 支持有序列表和无序列表。
 
