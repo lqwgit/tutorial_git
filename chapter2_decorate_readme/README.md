@@ -259,8 +259,18 @@ Use the `printf()` function.
 >\!\[Alt text\]\(/path/to/img.jpg\)  
 >\!\[Alt text\]\(/path/to/img.jpg "Optional title"\)  
 >  
->\!\[Icon\]\(http://pic.baidu.com/a.png\)
+>\!\[Icon\]\(http://pic.baidu.com/a.png)
 
+# 其他
+## 自动链接
+例如：  
+> \<http://example.com/>
+
+会转化为：  
+>\<a href="http://example.com/">http://example.com/\</a>
+
+显示为：  
+<http://example.com/>
 
 ## 反斜杠
 Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：
