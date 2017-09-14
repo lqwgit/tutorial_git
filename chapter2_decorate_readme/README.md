@@ -28,9 +28,9 @@ Markdown 语法的目标是：成为一种适用于网络的书写语言。Markd
 > 这是一个普通段落。  
 > &lt;table>  
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr>  
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;td>Foo&lt;/td>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td>Foo&lt;/td>  
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr>  
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/table>  
+&lt;/table>  
 > 这是另一个普通段落。
 
 HTML 的区段（行内）标签如 \<span>、\<cite>、\<del> 可以在 Markdown 的段落、列表或是标题里随意使用。依照个人习惯，甚至可以不用 Markdown 格式，而直接采用 HTML 标签来格式化。举例说明：如果比较喜欢 HTML 的 <a> 或 <img> 标签，可以直接使用这些标签，而不用 Markdown 提供的链接或是图像标签语法。
@@ -38,15 +38,18 @@ HTML 的区段（行内）标签如 \<span>、\<cite>、\<del> 可以在 Markdow
 ## 特殊字符自动转换
 在 HTML 文件中，有两个字符需要特殊处理： < 和 & 。 < 符号用于起始标签，& 符号则用于标记 HTML 实体，如果你只是想要显示这些字符的原型，你必须要使用实体的形式，像是 \&lt; 和 \&amp;。
 
-& 字符尤其让网络文档编写者受折磨，如果你要打「AT&T」 ，你必须要写成「AT&amp;T」。
+& 字符尤其让网络文档编写者受折磨，如果你要打「AT&T」 ，你必须要写成「AT\&amp;T」。
 
-如果你使用的 & 字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 &amp;。
-比如，你写：
-4 < 5
-Markdown 将会把它转换为：
-4 &lt; 5
-而你写：
-4 &lt; 5
+如果你使用的 & 字符是 HTML 字符实体的一部分，它会保留原状，否则它会被转换成 \&amp;。
+比如，你写：  
+> 4 < 5
+
+Markdown 将会把它转换为：  
+> 4 \&lt; 5
+
+而你写：  
+> 4 \&lt; 5
+
 Markdown 不会处理它
 
 # 区块元素
