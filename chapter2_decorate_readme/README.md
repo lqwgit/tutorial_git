@@ -1,4 +1,5 @@
 README.md的后缀md，是一种文件格式markdown的缩写。
+纯文本的Markdown文件可以转换被成html标签，然后显示在网页上。
 
 参考文献：http://wowubuntu.com/markdown/
 
@@ -8,11 +9,10 @@ Markdown 的目标是实现「易读易写」，最大灵感来源其实是纯�
 
 ## 兼容 HTML
 Markdown 语法的目标是：成为一种适用于网络的书写语言。
-纯文本的Markdown文件可以转换被成html标签，然后显示在网页上。
 
 不在 Markdown 涵盖范围之内的标签，都可以直接在文档里面用 HTML 撰写。不需要额外标注这是 HTML 或是 Markdown；只要直接加标签就可以了。
 
-要制约的只有一些 HTML 区块元素――比如 &lt;div>、&lt;table>、&lt;pre>、&lt;p> 等标签，必须在前后加上空行与其它内容区隔开，还要求它们的开始标签与结尾标签不能用制表符或空格来缩进。Markdown 的生成器有足够智能，不会在 HTML 区块标签外加上不必要的 &lt;p> 标签。
+要制约的只有一些 HTML 区块元素――比如 &lt;div>、&lt;table>、&lt;pre>、&lt;p> 等标签。详情见http://wowubuntu.com/markdown/。
 
 例子如下，在 Markdown 文件里加上一段 HTML 表格：
 
