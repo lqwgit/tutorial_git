@@ -252,7 +252,7 @@ This is [an example](http://example.com/ "Title") inline link.
 >\<p>Use the \<code>printf\(\)\</code> function.\</p>
 
 显示为：  
-Use the \`printf()\` function.
+Use the `printf()` function.
 
 ## 图片
 语法为：
@@ -262,7 +262,7 @@ Use the \`printf()\` function.
 >\!\[Icon\]\(http://pic.baidu.com/a.png\)
 
 
-##反斜杠
+## 反斜杠
 Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：
 >\   反斜线
 >`   反引号
