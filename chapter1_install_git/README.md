@@ -24,7 +24,7 @@
 
 添加远程库，首先需要在github上创建一个git仓库。步骤是进入https://github.com，找到new repository按钮，点击。然后输入一样的仓库名learngit。创建好之后找到仓库的git地址http或ssh的，有按钮可以直接复制。
 
-然后使用git remote add origin git@github.com:michaelliao/learngit.git 命令，添加远程库。这里我们把远程库命名为origin，公认的叫法。
+然后使用git remote add origin https://github.com/xxx/learngit.git 命令，添加远程库。这里我们把远程库命名为origin，公认的叫法。而使用https是因为https保存了ssh-key，可以一次设置以后都免密码。
 
 接下来，我们使用git push origin master 命令，把master推送到origin上。这样代码就保存到远程仓库上了。
 
